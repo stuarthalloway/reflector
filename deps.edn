@@ -1,2 +1,4 @@
 {:paths ["src"]
- :deps {org.clojure/data.xml "0.0.8"}}
+ :deps {org.clojure/clojure {:mvn/version "1.10.0-RC5"}}
+ :aliases
+ {:dev {}}}

@@ -12,6 +12,7 @@
    [clojure.datafy :as dfy]
    [clojure.repl :as repl]
    [clojure.string :as str]
+   [clojure.xml :as xml]
    [com.stuarthalloway.reflector.pom :as pom])
   (:import
    [clojure.lang Namespace]
