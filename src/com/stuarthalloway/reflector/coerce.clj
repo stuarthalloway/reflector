@@ -19,6 +19,7 @@
       (try
        (URL. s)
        (catch Throwable _
-         s)))
+         s))
+      s)
     s))
 
