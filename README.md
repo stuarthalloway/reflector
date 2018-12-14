@@ -12,6 +12,10 @@ add the code as a [git
 dep](https://clojure.org/guides/deps_and_cli#_using_git_libraries) or
 simply evaluate the namespaces.
 
+Then evaluate 
+
+    (com.stuarthalloway.reflector/on (find-ns 'clojure.core))
+
 # What it Can Do
 
 Given a Clojure namespace, navigate quickly to
