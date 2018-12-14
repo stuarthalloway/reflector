@@ -1,0 +1,2 @@
+{:paths ["src"]
+ :deps {org.clojure/data.xml "0.0.8"}}
