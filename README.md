@@ -24,6 +24,7 @@ Given a Clojure namespace, navigate quickly to
 * ClojureDocs for a var
 * origin SCM repository
 * code license
+* classpath resource the code was loaded from
 
 # Contributing
 
