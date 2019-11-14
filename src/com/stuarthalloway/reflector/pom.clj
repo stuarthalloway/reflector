@@ -25,7 +25,11 @@
             (str/replace #"^file:" "")
             (str/replace #"!.*" "")
             (str/replace #".jar$" ".pom")
-            (io/file))))
+            (as-> maybe-pom
+              (when-let [pom-file (and (str/ends-with? maybe-pom ".pom")
+                                       (io/file maybe-pom))]
+                (when (.exists pom-file)
+                  pom-file))))))
 
 (defn pom-contents
   [url]
@@ -66,4 +70,3 @@
      (->> (zip/down zip)
           (iterate zip/right)
           (take-while identity)))))
-
